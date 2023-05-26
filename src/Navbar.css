@@ -1,0 +1,18 @@
+.navigation {
+    background-color:transparent;
+    margin-left: 2em;
+    margin-top:1em;
+    }
+
+.primary-navigation {
+    color: rgb(216, 183, 139);
+}
+
+.navigation-links {
+color: rgb(139, 139, 216);
+}
+
+.secondary-navigation {
+color:white; 
+margin-right: 2em;   
+}
