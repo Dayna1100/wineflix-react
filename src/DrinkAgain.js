@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+//import React, { useState } from "react";
 import "./App.css";
 
   const data = [
@@ -13,13 +13,13 @@ import "./App.css";
   ];
 
   const DrinkAgain = () => {
-    
-  return (
+  
+    return (
       <section className="category">
         <h2>Drink Again</h2>
         <div className="wine">
         <ul>
-        {filteredItems.map((item) => (
+        {data.map((item) => (
         <li key={item.id}> {item.isNew ? <span className="new-badge">New!</span> : null}
         <img src={item.imageUrl} alt={item.label} /></li>
         ))}

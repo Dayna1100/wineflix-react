@@ -1,5 +1,5 @@
 import './App.css';
-import ProgressBars from './ProgressBars';
+//import ProgressBars from './ProgressBars';
 
 const data = [
     { id: 1, imageUrl: '/red-wine.jpg', progress: 22, label: 'Wine', },
