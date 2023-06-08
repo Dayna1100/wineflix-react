@@ -1,23 +1,32 @@
 import './Navbar.css';
 import './App.css';
 
-function PrimaryNav() {
+const PrimaryNav = () => {
+  const links = [{
+    url: "https://developer.mozilla.org",
+    label: "Home",
+}, {
+  url: "https://developer.mozilla.org",
+  label: "Whites",
+}, {
+  url: "https://developer.mozilla.org",
+  label: "Reds",
+}, {
+  url: "https://developer.mozilla.org",
+  label: "Blends",
+}] 
+
    return (
    <section className="primary-navigation">
       <h1>WineFlix</h1>
       <ul className="navigation-links">
-        <li className="active">
-          <a href="https://developer.mozilla.org">Home</a>
-        </li>
-        <li>
-          <a href="https://developer.mozilla.org">Whites</a>
-        </li>
-        <li>
-          <a href="https://developer.mozilla.org">Reds</a>
-        </li>
-        <li>
-          <a href="https://developer.mozilla.org">Blends</a>
-        </li>
+        {
+          links.map(link => {
+            return <li className={link.active ? "active" : ""}>
+              <a href={link.url}>{link.label}</a>
+            </li>
+          })
+        }
       </ul>
     </section>
    )
